@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:09:41 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/16 13:47:04 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:05:27 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,9 @@
 
 int	main(void)
 {
-	// char	test[] = "TEST";
+	Contact instance;
 	
-	std::cout << "Entrez un contact" << std::endl;
-	Contact::Add();
+	instance.Add();
 	// std::cin >> Contact::f_name;
 	// std::cout << "Vous avez entrez: " << test << std::endl;
 	return (0);

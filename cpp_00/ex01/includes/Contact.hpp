@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:02:34 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/16 13:14:56 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/16 15:44:05 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,19 @@
 class Contact
 {
 public:
-	Contact(char test[]);
+	Contact(void);
+	// ~Contact(void);
+
+	// int		test;
+	
 	void	Add(void);
 	void	Search(void);
 	void	Exit(void);
 	;
 
 private:
-	char	*f_name;
+	int 	test;
+	char	f_name[512];
 	char	*l_name;
 	char	*nickname;
 	int		phone;
