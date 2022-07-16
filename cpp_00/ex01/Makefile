@@ -6,7 +6,7 @@
 #    By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/16 10:57:13 by nadesjar          #+#    #+#              #
-#    Updated: 2022/07/16 11:01:44 by nadesjar         ###   ########.fr        #
+#    Updated: 2022/07/16 13:02:25 by nadesjar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ RESET			= "\033[0m"
 PATH_OBJS 		= ./objs/
 PATH_SRC		= ./src/
 
-FILES			= $(PATH_SRC)PhoneBook.cpp \
+FILES			= $(PATH_SRC)Main.cpp $(PATH_SRC)Contact.cpp \
 
 OBJS			= $(patsubst $(PATH_SRC)%.c, $(PATH_OBJS)%.o, $(FILES))
 
