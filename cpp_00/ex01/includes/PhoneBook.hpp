@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:08:04 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/16 12:49:54 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/21 14:52:34 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,14 @@
 class PhoneBook
 {
 public:
-	PhoneBook(int argc, char **argv);
-	;
+	PhoneBook(void);
+	~PhoneBook(void);
 
-private:
-	char **tab;
+	char	*RetCmd(void);
+	int		ChooseAction(void);
+
+	Contact *tab;
+	char 	*cmd;
 };
 
 #endif
