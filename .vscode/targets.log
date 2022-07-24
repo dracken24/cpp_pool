@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 22 10:32:14 2022
+# Make data base, printed on Sun Jul 24 18:46:35 2022
 
 # Variables
 
@@ -47,7 +49,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/dracken24/Desktop/prog/42_en_cours/c++_pool
+PWD = /home/dracken24/Desktop/prog/42_en_cours/cpp_pool
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -75,7 +77,7 @@ HOMEBREW_REPOSITORY = /home/linuxbrew/.linuxbrew/Homebrew
 # makefile
 MAKEFLAGS = pqrR
 # makefile
-CURDIR := /home/dracken24/Desktop/prog/42_en_cours/c++_pool
+CURDIR := /home/dracken24/Desktop/prog/42_en_cours/cpp_pool
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
@@ -101,7 +103,7 @@ SNAP_REEXEC =
 # environment
 ZSH = /home/dracken24/.oh-my-zsh
 # environment
-VSCODE_PID = 5828
+VSCODE_PID = 6406
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -109,7 +111,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2769,unix/Dracken24:/tmp/.ICE-unix/2769
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2747,unix/Dracken24:/tmp/.ICE-unix/2747
 # automatic
 *F = $(notdir $*)
 # environment
@@ -157,7 +159,7 @@ SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/102
 # environment
-INVOCATION_ID = 11e2b4290c0a472daeec5b02d407b472
+INVOCATION_ID = db75af333f5c45199db11856498e7e31
 # environment
 SNAP_REVISION = 102
 # environment
@@ -189,7 +191,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 2791
+SYSTEMD_EXEC_PID = 2771
 # environment
 DISPLAY = :1
 # environment
@@ -207,11 +209,11 @@ SNAP_DATA = /var/snap/code/102
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2118
+MANAGERPID = 2097
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 5779
+GIO_LAUNCHED_DESKTOP_FILE_PID = 6358
 # environment
 PAGER = less
 # environment
@@ -223,7 +225,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:41263
+JOURNAL_STREAM = 8:39239
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -273,20 +275,18 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 66308, inode 2589326): 6 files, no impossibilities.
+# . (device 66308, inode 2596895): 6 files, no impossibilities.
 
 # 6 files, no impossibilities in 1 directories.
 
 # Implicit Rules
- 
-make: *** No rule to make target 'all'.  Stop.
-
 
 # No implicit rules.
 
 # Files
 
 # Not a target:
+ 
 Makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -334,6 +334,6 @@ GNUmakefile:
 # strcache performance: lookups = 17 / hit rate = 17%
 # hash-table stats:
 # Load=14/8192=0%, Rehash=0, Collisions=0/17=0%
-# Finished Make data base on Fri Jul 22 10:32:14 2022
+# Finished Make data base on Sun Jul 24 18:46:35 2022
 
  
