@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:09:27 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/23 21:08:57 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/23 21:33:15 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,14 +68,16 @@ void	Contact::Search(int nbr)
 		if (strcmp(str, this->tab[i].first_name) == 0 
 				|| strcmp(str, this->tab[i].last_name) == 0)
 		{
-			std::cout << this->tab[i].first_name << std::endl;
-			std::cout << this->tab[i].last_name << std::endl;
-			std::cout << this->tab[i].nickname << std::endl;
-			std::cout << this->tab[i].phone << std::endl;
-			std::cout << this->tab[i].d_secret << std::endl;
+			std::cout << std::endl;
+			std::cout << "First Name  : " << this->tab[i].first_name << std::endl;
+			std::cout << "Last Name   : " << this->tab[i].last_name << std::endl;
+			std::cout << "Nickname    : " << this->tab[i].nickname << std::endl;
+			std::cout << "Phone       : " << this->tab[i].phone << std::endl;
+			std::cout << "Dark Secret : " << this->tab[i].d_secret << std::endl;
+			std::cout << std::endl;
 			break;
 		}
-		else
+		else if (i >= 7)
 			std::cout << "Contact not found" << std::endl;
 	}
 	
