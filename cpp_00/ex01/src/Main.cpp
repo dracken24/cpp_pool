@@ -6,14 +6,12 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:09:41 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/23 21:04:13 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:03:01 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/Contact.hpp"
 #include "../includes/PhoneBook.hpp"
-
-// int	ChooseAction(void);
 
 int	main(void)
 {
@@ -24,13 +22,13 @@ int	main(void)
 
 	repertoire.nbr_ct = 0;
 	i = 0;
-	contact.tab = new Contact[8];
+	repertoire.tab = new Contact[8];
 	while (i >= 0)
 	{
 		cmd = repertoire.ChooseAction();
 		if (cmd == 1)
 		{
-			contact.tab[i] = contact.Add();
+			repertoire.tab[i] = repertoire.Add();
 			if (repertoire.nbr_ct <=7)
 				repertoire.nbr_ct++;
 			if (i >= 7)
@@ -39,11 +37,11 @@ int	main(void)
 				i++;
 		}
 		else if (cmd == 2)
-			contact.Search(repertoire.nbr_ct);
+			repertoire.Search(repertoire.nbr_ct);
 		else if (cmd == 3)
 			break;
 	}
-	delete[] contact.tab;
+	delete[] repertoire.tab;
 	return (0);
 }
 
