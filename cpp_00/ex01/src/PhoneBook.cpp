@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:00:12 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/21 21:16:50 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/23 21:05:58 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,14 @@
 
 PhoneBook::PhoneBook(void)
 {
-	std::cout << "Construct PhoneBook" << std::endl;
+	// std::cout << "Construct PhoneBook" << std::endl;
+	return;
 }
 
 PhoneBook::~PhoneBook(void)
 {
-	std::cout << "Destruct PhoneBook" << std::endl;
+	// std::cout << "Destruct PhoneBook" << std::endl;
+	return;
 }
 
 int	    PhoneBook::ChooseAction(void)
