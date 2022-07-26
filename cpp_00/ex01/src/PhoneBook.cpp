@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:00:12 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/25 22:22:58 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/25 23:04:36 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,17 +68,18 @@ void	PhoneBook::Search(int nbr_ct)
 	std::cout << "Enter The index for see all the information" << std::endl;
 	std::cin >> str;
 	
-	this->AfficheContact(str);
+	this->AfficheContact(str, nbr_ct);
 	
 	delete[] str;
 	return;
 }
 
-void	PhoneBook::AfficheContact(char *str)
+void	PhoneBook::AfficheContact(char *str, int nbr_ct)
 {
 	int nbr = atoi(str);
 	
-	if (nbr > 0 || nbr < 9)
+	std::cout << nbr <<std::endl;
+	if (nbr > 0 && nbr < 9 && nbr < nbr_ct)
 	{
 		std::cout << std::endl;
 		std::cout << "First Name  : " << this->tab[nbr - 1].ReturnFname() << std::endl;
@@ -90,7 +91,11 @@ void	PhoneBook::AfficheContact(char *str)
 		return;
 	}
 	else
+	{
+		std::cout << std::endl;
 		std::cout << "--Wrong index--" <<std::endl;
+		std::cout << std::endl;
+	}
 	return;
 }
 
@@ -100,15 +105,16 @@ void	PhoneBook::ListContacts(int nbr_ct)
 
 	while (++i < nbr_ct - 1)
 	{
+		std::cout << std::endl;
 		std::cout << this->tab[i].ReturnIndex() << "  |  ";
-
 		this->PutStrRight(this->tab[i].ReturnFname());
 		std::cout << "  |  ";
 		this->PutStrRight(this->tab[i].ReturnLname());
 		std::cout << "  |  ";
 		this->PutStrRight(this->tab[i].ReturnNick());
-		std::cout << std::endl;
 	}
+	std::cout << std::endl;
+	std::cout << std::endl;
 	return;
 }
 

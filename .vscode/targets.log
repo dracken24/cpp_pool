@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 25 20:12:32 2022
+# Make data base, printed on Mon Jul 25 23:06:09 2022
 
 # Variables
 
@@ -215,7 +215,7 @@ MANAGERPID = 2120
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 111729
+GIO_LAUNCHED_DESKTOP_FILE_PID = 152951
 # environment
 PAGER = less
 # environment
@@ -322,6 +322,7 @@ GNUmakefile:
 #  Failed to be updated.
 
 # files hash-table stats:
+ 
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
@@ -335,6 +336,6 @@ GNUmakefile:
 # strcache performance: lookups = 17 / hit rate = 17%
 # hash-table stats:
 # Load=14/8192=0%, Rehash=0, Collisions=0/17=0%
-# Finished Make data base on Mon Jul 25 20:12:32 2022
+# Finished Make data base on Mon Jul 25 23:06:09 2022
 
  
