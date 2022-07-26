@@ -6,7 +6,7 @@
 #    By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/16 10:57:13 by nadesjar          #+#    #+#              #
-#    Updated: 2022/07/24 15:40:00 by nadesjar         ###   ########.fr        #
+#    Updated: 2022/07/25 20:12:26 by nadesjar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,6 @@ $(NAME): $(OBJS)
 	@echo $(LILAS)"COMPILATION DE PhoneBook EN COURS..."$(RESET)
 	$(CC) $(OBJS) $(CFLAGS) -o PhoneBook
 	@echo $(LILAS)"PhoneBook READY !!!"$(RESET)
-
 
 $(PATH_OBJS)%.o:	$(PATH_SRC)%.c
 	@mkdir -p $(PATH_OBJS)
