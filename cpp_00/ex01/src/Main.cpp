@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:09:41 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/25 22:19:20 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/26 19:46:04 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,6 @@ int	main(void)
 		if (cmd == 3)
 			break;
 	}
-	
+	// delete[] repertoire.tab;
 	return (0);
 }

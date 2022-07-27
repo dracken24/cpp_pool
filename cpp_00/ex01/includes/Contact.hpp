@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:02:34 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/25 21:54:19 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/26 19:54:02 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ public:
 	char	*ReturnPhone(void);
 	char	*ReturnSecret(void);
 	int		ReturnIndex(void);
+	void	DeleteContact(void);
 
 private:
 	char	*first_name;

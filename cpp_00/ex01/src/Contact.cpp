@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:09:27 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/25 22:11:34 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/26 20:01:32 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 Contact::Contact()
 {
 	// std::cout << "Construct Contact" << std::endl;
-	this->first_name = new char[64];
-	this->last_name = new char[64];
-	this->nickname = new char[64];
-	this->d_secret = new char[128];
-	this->phone = new char[16];
-	this->index = new int[1];
+	// this->first_name = new char[64];
+	// this->last_name = new char[64];
+	// this->nickname = new char[64];
+	// this->d_secret = new char[128];
+	// this->phone = new char[16];
+	// this->index = new int[1];
 
 	return;
 }
@@ -60,50 +60,42 @@ Contact	Contact::InitContact(int i)
 	return (cont);
 }
 
+void	Contact::DeleteContact(void)
+{
+	delete[] this->first_name;
+	delete[] this->last_name;
+	delete[] this->nickname;
+	delete[] this->phone;
+	delete[] this->d_secret;
+	delete[] this->index;
+}
+
 char	*Contact::ReturnFname(void)
 {
-	char	*str = new char[32];
-
-	str = this->first_name;
-	return (str);
+	return (this->first_name);
 }
 
 char	*Contact::ReturnLname(void)
 {
-	char	*str = new char[32];
-
-	str = this->last_name;
-	return (str);
+	return (this->last_name);
 }
 
 char	*Contact::ReturnNick(void)
 {
-	char	*str = new char[32];
-
-	str = this->nickname;
-	return (str);
+	return (this->nickname);
 }
 
 char	*Contact::ReturnPhone(void)
 {
-	char	*str = new char[32];
-
-	str = this->phone;
-	return (str);
+	return (this->phone);
 }
 
 char	*Contact::ReturnSecret(void)
 {
-	char	*str = new char[32];
-
-	str = this->d_secret;
-	return (str);
+	return (this->d_secret);
 }
 
 int		Contact::ReturnIndex(void)
 {
-	int	ret;
-
-	ret = this->index[0];
-	return (ret);
+	return (this->index[0]);
 }

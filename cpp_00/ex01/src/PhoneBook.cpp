@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:00:12 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/25 23:04:36 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/26 19:59:00 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@ PhoneBook::PhoneBook(void)
 
 PhoneBook::~PhoneBook(void)
 {
+	int	i = -1;
+	
+	while (++i < 8)
+		this->tab->DeleteContact();
 	// std::cout << "Destruct PhoneBook" << std::endl;
 	return;
 }
@@ -120,14 +124,28 @@ void	PhoneBook::ListContacts(int nbr_ct)
 
 void	PhoneBook::PutStrRight(char *str)
 {
+	int ct;
 	int i = strlen(str);
 	int	k = -1;
 	int r = 10 - i + 1;
+	ct = 1;
+	
 	while (--r > 0)
 		std::cout << ' ';
 	i = -1;
 	while (++k < 10 && ++i < (int)strlen(str))
-		std::cout << str[i];
+	{
+		if (strlen(str) == 10)
+		{
+			std::cout << str;
+			break;
+		}
+		if (ct >= 10)
+			std::cout << '.';
+		else
+			std::cout << str[i];
+		ct++;
+	}
 	return;
 }
 
