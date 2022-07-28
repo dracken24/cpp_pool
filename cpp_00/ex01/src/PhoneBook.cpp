@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:00:12 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/26 19:59:00 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/28 13:50:24 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,21 @@
 
 PhoneBook::PhoneBook(void)
 {
-	// std::cout << "Construct PhoneBook" << std::endl;
 	return;
 }
 
 PhoneBook::~PhoneBook(void)
 {
+	return;
+}
+
+void	PhoneBook::DeleteContact(int nbr_ct)
+{
 	int	i = -1;
-	
-	while (++i < 8)
-		this->tab->DeleteContact();
-	// std::cout << "Destruct PhoneBook" << std::endl;
+
+	while (++i < nbr_ct)
+		this->tab[i].DeleteContact();
+	delete[] this->tab;
 	return;
 }
 
@@ -49,21 +53,25 @@ int		PhoneBook::ChooseAction(void)
 	else if (strcmp(this->cmd, "EXIT") == 0)
 		ret = 3;
 	else
-		return (0);
+	{
+		std::cout << std::endl;
+		std::cout << "--Wrong entry--" << std::endl;
+		std::cout << std::endl;
+	}
 	
 	delete[] this->cmd;
 	return (ret);
 }
 
-void	PhoneBook::Add(int i)
+void	PhoneBook::Add(int del_ct, int i)
 {
-	Contact	cont;
-	
-	this->tab[i - 1] = cont.InitContact(i);
+	if (del_ct < 9)
+		this->tab[i - 1].InitContact();
+	this->tab[i - 1].ChangeContact();
 	return;
 }
 
-void	PhoneBook::Search(int nbr_ct)
+void	PhoneBook::Search(int nbr_ct) const
 {
 	char *str = new char[32];
 
@@ -78,7 +86,7 @@ void	PhoneBook::Search(int nbr_ct)
 	return;
 }
 
-void	PhoneBook::AfficheContact(char *str, int nbr_ct)
+void	PhoneBook::AfficheContact(char *str, int nbr_ct) const
 {
 	int nbr = atoi(str);
 	
@@ -103,14 +111,14 @@ void	PhoneBook::AfficheContact(char *str, int nbr_ct)
 	return;
 }
 
-void	PhoneBook::ListContacts(int nbr_ct)
+void	PhoneBook::ListContacts(int nbr_ct) const
 {
 	int	i = -1;
 
 	while (++i < nbr_ct - 1)
 	{
 		std::cout << std::endl;
-		std::cout << this->tab[i].ReturnIndex() << "  |  ";
+		std::cout << i + 1 << "  |  ";
 		this->PutStrRight(this->tab[i].ReturnFname());
 		std::cout << "  |  ";
 		this->PutStrRight(this->tab[i].ReturnLname());
@@ -122,7 +130,7 @@ void	PhoneBook::ListContacts(int nbr_ct)
 	return;
 }
 
-void	PhoneBook::PutStrRight(char *str)
+void	PhoneBook::PutStrRight(char *str) const
 {
 	int ct;
 	int i = strlen(str);
@@ -149,7 +157,7 @@ void	PhoneBook::PutStrRight(char *str)
 	return;
 }
 
-void	PhoneBook::SearchContacts(PhoneBook *repertoire, int nbr_ct)
+void	PhoneBook::SearchContacts(PhoneBook *repertoire, int nbr_ct) const
 {
 	repertoire->Search(nbr_ct);
 }

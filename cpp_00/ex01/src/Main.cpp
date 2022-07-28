@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:09:41 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/26 19:46:04 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/28 13:32:12 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,17 @@ int	main(void)
 {
 	PhoneBook	repertoire;
 	int			cmd;
-	int			i;
-	int 		nbr_ct;
+	int			i = 1;
+	int 		nbr_ct = 1;
+	int 		del_ct = 0;
 
-	nbr_ct = 1;
-	i = 1;
 	repertoire.InitRep();
 	while (i >= 1)
 	{
 		cmd = repertoire.ChooseAction();
 		if (cmd == 1)
 		{
-			repertoire.Add(i);
+			repertoire.Add(del_ct, i);
 			if (nbr_ct <=8)
 				nbr_ct++;
 			if (i >= 8)
@@ -41,6 +40,6 @@ int	main(void)
 		if (cmd == 3)
 			break;
 	}
-	// delete[] repertoire.tab;
+	repertoire.DeleteContact(nbr_ct);
 	return (0);
 }

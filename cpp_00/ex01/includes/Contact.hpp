@@ -6,7 +6,7 @@
 /*   By: nadesjar <dracken24@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 11:02:34 by nadesjar          #+#    #+#             */
-/*   Updated: 2022/07/26 19:54:02 by nadesjar         ###   ########.fr       */
+/*   Updated: 2022/07/28 13:47:28 by nadesjar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,23 @@
 # define CONTACT_HPP
 
 # include <iostream>
+# include <string.h>
 
 class Contact
 {
 public:
 	Contact(void);
 	~Contact(void);
-	Contact	InitContact(int i);
-	char	*ReturnFname(void);
-	char	*ReturnLname(void);
-	char	*ReturnNick(void);
-	char	*ReturnPhone(void);
-	char	*ReturnSecret(void);
-	int		ReturnIndex(void);
+	
+	void	InitContact(void);
+	void	ChangeContact(void);
+	
+	char	*ReturnSecret(void) const;
+	char	*ReturnPhone(void) const;
+	char	*ReturnFname(void) const;
+	char	*ReturnLname(void) const;
+	char	*ReturnNick(void) const;
+	
 	void	DeleteContact(void);
 
 private:

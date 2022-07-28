@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jul 25 23:06:09 2022
+# Make data base, printed on Thu Jul 28 11:43:31 2022
 
 # Variables
 
@@ -16,8 +16,6 @@ make: *** No rule to make target 'all'.  Stop.
 GDK_BACKEND = x11
 # environment
 LC_ALL = C
-# environment
-NO_AT_BRIDGE = 1
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
@@ -105,7 +103,7 @@ SNAP_REEXEC =
 # environment
 ZSH = /home/dracken24/.oh-my-zsh
 # environment
-VSCODE_PID = 5979
+VSCODE_PID = 6447
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -113,7 +111,7 @@ XDG_SESSION_TYPE = x11
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2766,unix/Dracken24:/tmp/.ICE-unix/2766
+SESSION_MANAGER = local/Dracken24:@/tmp/.ICE-unix/2804,unix/Dracken24:/tmp/.ICE-unix/2804
 # automatic
 *F = $(notdir $*)
 # environment
@@ -161,7 +159,7 @@ SNAP_USER_COMMON = /home/dracken24/snap/code/common
 # environment
 SNAP = /snap/code/102
 # environment
-INVOCATION_ID = 68fa3677ad274a51a9f9e90296332457
+INVOCATION_ID = 841ea032dd5e442d8914353cd4c2a783
 # environment
 SNAP_REVISION = 102
 # environment
@@ -193,7 +191,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 2785
+SYSTEMD_EXEC_PID = 2827
 # environment
 DISPLAY = :1
 # environment
@@ -211,11 +209,11 @@ SNAP_DATA = /var/snap/code/102
 # environment
 SNAP_CONTEXT = fSKYpYhDKXjiX9W__W9nCBCj5n_I7R-ps2DwHvI_mLnd_pK3KmHQ
 # environment
-MANAGERPID = 2120
+MANAGERPID = 2151
 # environment
 HOMEBREW_CELLAR = /home/linuxbrew/.linuxbrew/Cellar
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 152951
+GIO_LAUNCHED_DESKTOP_FILE_PID = 6362
 # environment
 PAGER = less
 # environment
@@ -227,7 +225,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/dracken24/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-JOURNAL_STREAM = 8:37448
+JOURNAL_STREAM = 8:37850
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -269,7 +267,7 @@ GDMSESSION = ubuntu
 # environment
 SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
 # variable set hash-table stats:
-# Load=128/1024=12%, Rehash=0, Collisions=11/155=7%
+# Load=127/1024=12%, Rehash=0, Collisions=11/154=7%
 
 # Pattern-specific Variable Values
 
@@ -282,6 +280,7 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 # 6 files, no impossibilities in 1 directories.
 
 # Implicit Rules
+ 
 
 # No implicit rules.
 
@@ -322,7 +321,6 @@ GNUmakefile:
 #  Failed to be updated.
 
 # files hash-table stats:
- 
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
@@ -336,6 +334,6 @@ GNUmakefile:
 # strcache performance: lookups = 17 / hit rate = 17%
 # hash-table stats:
 # Load=14/8192=0%, Rehash=0, Collisions=0/17=0%
-# Finished Make data base on Mon Jul 25 23:06:09 2022
+# Finished Make data base on Thu Jul 28 11:43:32 2022
 
  
